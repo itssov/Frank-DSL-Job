@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Bienvenido usuario $usuario, ¿Desea continuar con el mismo idioma?"
+if [ "$traducir" = "true" ] && [ "$idioma" = "ingles" ]
+then
+    echo "We will continue using the language $idioma from now on."
+elif [ "$traducir" = "true" ] && [ "$idioma" = "aleman" ]
+then
+    echo "Hallo Herr $usuario, die Sprache ist jetzt auf $idioma."
+elif [ "$traducir" = "true" ] && [ "$idioma" = "italiano" ]
+then
+    echo "Benvenuto $usuario, stiamo usando la lingua $idioma ora."
+else
+    echo "$usuario, se continuara con el idioma predeterminado."
+fi
